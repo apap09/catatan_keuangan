@@ -4,14 +4,13 @@
    bentuk (garis tangan), bayangan, dan gerak. Tata letak tidak diubah.
    =================================================================== */
 @font-face{font-family:"Patrick Hand";src:url(/fonts/patrick.woff) format("woff");font-display:swap}
-@font-face{font-family:"Child Hood";src:url(/fonts/childhood.woff) format("woff");font-display:swap}
 
 :root{
   --bg:#1e1e1c; --s1:#272723; --s2:#31312c; --line:#57554c; --ink:#d8cbb3;
   --or:#d8cbb3; --or2:#e9dfca; --tx:#ece3d0; --mu:#a9acb2;
-  --red:#d9826b; --grn:#9cc7a3; --yel:#b9bdc3; --pink:#a79c86; --blu:#9aa0a8;
-  --hand:"Child Hood","Patrick Hand","Segoe Print","Comic Sans MS",cursive,system-ui,sans-serif;
-  --brush:"Child Hood","Patrick Hand","Segoe Print","Comic Sans MS",cursive,system-ui,sans-serif;
+  --red:#f4a261; --grn:#2a9d8f; --yel:#b9bdc3; --pink:#a79c86; --blu:#9aa0a8;
+  --hand:"Patrick Hand","Segoe Print","Comic Sans MS",cursive,system-ui,sans-serif;
+  --brush:var(--hand);
   /* bentuk bergelombang ala gambar tangan */
   --w1:255px 14px 225px 14px/14px 225px 14px 255px;
   --w2:14px 225px 14px 255px/225px 14px 255px 14px;
@@ -180,12 +179,12 @@ button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2.5px da
 .gcard{background:var(--s1);border:2px solid var(--ink);border-radius:var(--w1);box-shadow:var(--pencil);transition:transform .55s var(--spr),box-shadow .2s}
 .gcard:nth-child(even){border-radius:var(--w2)}
 .gcard:active{transform:scale(.96) rotate(-.6deg)}
-.gcard.ok{border-color:var(--grn);box-shadow:3px 4px 0 rgba(156,199,163,.35)}
+.gcard.ok{border-color:var(--grn);box-shadow:3px 4px 0 rgba(42,157,143,.35)}
 .gthumb{border:2px solid var(--ink);border-radius:var(--w3);background:var(--s2)}
 .gname{font-family:var(--brush);font-weight:400;font-size:1.2rem;letter-spacing:.02em}
 .gbar{background:var(--s2);border:2px solid var(--ink);border-radius:99px;height:14px;overflow:hidden}
 .gfill{background:repeating-linear-gradient(135deg,var(--or) 0 8px,var(--or2) 8px 16px);border-radius:99px}
-.gcard.ok .gfill{background:repeating-linear-gradient(135deg,var(--grn) 0 8px,#bfe0c4 8px 16px)}
+.gcard.ok .gfill{background:repeating-linear-gradient(135deg,var(--grn) 0 8px,#5cc4b6 8px 16px)}
 .gd-ring .tr{stroke:var(--s2)}.gd-ring .fg{stroke:var(--or);stroke-linecap:round}.gd-ring.ok .fg{stroke:var(--grn)}
 .gd-pct{font-size:1.9rem}
 .gtog,.gph-add{border:2px dashed var(--ink);border-radius:var(--w3);background:var(--s2)}
