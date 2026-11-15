@@ -20,12 +20,12 @@
   /* 2. hiasan melayang di belakang halaman */
   const bg = document.createElement('div'); bg.className = 'doodle-bg'; bg.setAttribute('aria-hidden', 'true'); document.body.prepend(bg);
   const SHAPES = [
-    ['M12 2 L15 9 L22 10 L17 15 L18.5 22 L12 18.5 L5.5 22 L7 15 L2 10 L9 9 Z', '#ffd84d'],       // bintang
-    ['M2 12 C6 4,10 20,14 12 S22 4,26 12', '#ff8fc3'],                                              // squiggle
-    ['M12 3 a9 9 0 1 0 .1 0', '#7cc4ff'],                                                           // lingkaran
-    ['M12 3 V21 M3 12 H21', '#5ee6a8'],                                                             // tambah
-    ['M3 18 C10 4,16 4,22 12 M22 12 L15 11 M22 12 L20 19', '#ff8a2b'],                              // panah melengkung
-    ['M3 20 L9 6 L15 20 L21 6', '#ffd84d'],                                                         // zigzag
+    ['M12 2 L15 9 L22 10 L17 15 L18.5 22 L12 18.5 L5.5 22 L7 15 L2 10 L9 9 Z', '#d8cbb3'],       // bintang
+    ['M2 12 C6 4,10 20,14 12 S22 4,26 12', '#b9bdc3'],                                              // squiggle
+    ['M12 3 a9 9 0 1 0 .1 0', '#9aa0a8'],                                                           // lingkaran
+    ['M12 3 V21 M3 12 H21', '#b9bdc3'],                                                             // tambah
+    ['M3 18 C10 4,16 4,22 12 M22 12 L15 11 M22 12 L20 19', '#e9dfca'],                              // panah melengkung
+    ['M3 20 L9 6 L15 20 L21 6', '#d8cbb3'],                                                         // zigzag
   ];
   const spots = [[7, 12], [86, 8], [92, 38], [4, 52], [80, 66], [14, 82], [60, 90], [46, 5], [30, 40], [70, 28]];
   spots.forEach(([x, y], i) => {
